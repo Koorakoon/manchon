@@ -2,6 +2,12 @@
 
 힐스테이트 만촌 엘퍼스트 및 힐스 에비뉴 만촌 엘퍼스트의 홈페이지·20초 홍보영상 제작방향을 보여주는 정적 데모입니다.
 
+## 발표용 사이트
+
+- 사이트: https://koorakoon.github.io/manchon/
+- 저장소: https://github.com/Koorakoon/manchon
+- 게시 설정: main 브랜치 / 루트, GitHub Pages, HTTPS
+
 ## 파일
 
 - `index.html`: 사진, CSS, JavaScript를 모두 포함한 단일 페이지
@@ -46,4 +52,4 @@
 
 일반 텍스트/코드 편집기로 `index.html`을 편집하고 커밋하면 Pages에 반영됩니다. 큰 base64 이미지 문자열은 건드리지 않고 문구와 CSS를 수정할 수 있습니다. 내용에는 조사 기준일과 발표용 표시를 유지하세요.
 
-이 패키지는 게시 가능하도록 준비된 결과물이며 실제 GitHub 저장소 생성이나 배포 완료를 의미하지 않습니다.
+배포 상태는 저장소 Actions의 pages build and deployment에서 확인할 수 있습니다. 정식 서비스가 아닌 발표용 데모입니다.
