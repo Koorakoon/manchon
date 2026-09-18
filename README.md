@@ -11,13 +11,15 @@
 ## 파일
 
 - `index.html`: 사진, CSS, JavaScript를 모두 포함한 단일 페이지
+- `assets/fonts/PretendardVariable.woff2`: 자체 호스팅하는 공식 Pretendard 웹폰트
+- `assets/fonts/LICENSE.txt`: Pretendard 원본 저작권 및 SIL OFL 1.1 라이선스
 - `.nojekyll`: Jekyll 빌드 생략 표시
 - `README.md`: 게시 및 발표 안내
 
 ## GitHub Pages 게시
 
 1. GitHub에서 발표용 저장소를 만듭니다. 예: `manchon-demo`.
-2. ZIP을 먼저 압축 해제합니다. ZIP 자체가 아니라 **압축 안의 `index.html`, `.nojekyll`, `README.md`를 저장소 최상위(root)**에 업로드하고 `main` 브랜치로 커밋합니다.
+2. ZIP을 먼저 압축 해제합니다. ZIP 자체가 아니라 **압축 안의 `index.html`, `assets` 폴더, `.nojekyll`, `README.md`를 저장소 최상위(root)**에 업로드하고 `main` 브랜치로 커밋합니다.
 3. 저장소의 **Settings → Pages**를 엽니다.
 4. Source에서 **Deploy from a branch**를 선택합니다.
 5. Branch를 **main**, Folder를 **/(root)**로 정하고 Save 합니다.
@@ -54,12 +56,34 @@
 
 상단 탭을 이용합니다.
 
-1. **홈페이지**: 딥그린·아이보리·골드, 실제 외관 사진, 4개 생활권, 주거/상가 분기
+1. **홈페이지**: 공식 버건디·화이트·크림, Pretendard, 전면 현장사진, 4개 생활권, 주거/상가 분기
 2. **오피스텔 20초**: “배움은 가까이, 집은 편안하게.” / 가족의 교육 생활 + 쾌적한 주거
 3. **상가 20초**: “만촌역 역세권, 내 가게의 출발점.” / 역세권·단지 상가 중심, 의료·교육·카페 보조
-4. **전략·근거·제작**: 조사 근거, 주의할 표현, GitHub·Flow 제작 방식
+4. **전략·브랜드·근거**: 공식 BI와 3개 분양 홈페이지 비교, 조사 근거, 주의할 표현, GitHub·Flow 제작 방식
 
 영상 탭의 ‘20초 리듬 미리보기’는 오피스텔 0–3 / 3–8 / 8–13 / 13–16 / 16–20초, 상가 0–10 / 10–14 / 14–16 / 16–18 / 18–20초로 각각 다른 컷 타이밍을 강조합니다. 실제 동영상이나 오디오 파일이 아닙니다. 하단 접이식 영역에 Flow 프롬프트 초안이 있습니다.
+
+## 힐스테이트 브랜드 적용 (2026.09.18)
+
+- 공식 BI 기준색: Hillstate Burgundy 2026 Vintage, RGB 151/25/52, HEX #971934, PANTONE 7641 C.
+- 본문·제목·영상 자막은 Pretendard Variable로 통일했습니다. 웹폰트는 원본 OFL 라이선스와 함께 저장소 안에서 로드하므로 외부 CDN 호출이 없습니다.
+- 크림 #F4EFE4 / #ECE4D0, 브론즈 #A38862, 푸터 #463737은 공식 분양 템플릿에서 관찰한 보조색이며 별도 공식 BI 규정이라고 단정하지 않습니다.
+- 홈페이지: 화이트 헤더, 대형 사진형 히어로, 고딕 제목, 여백 중심 정보 카드, 버건디 CTA, 웜브라운 푸터.
+- 영상: 밝은 AI 장면은 유지하고 브랜드 라벨·자막 강조·CTA만 버건디로 통일합니다. 오피스텔 엔딩은 16–20초 버건디 카드, 상가는 기존 0–20초 브랜드·14–20초 상담 오버레이를 유지합니다.
+- 기존 10개 삽입 이미지(홈페이지 1개, 오피스텔 4개, 상가 5개)는 바꾸지 않았습니다. 두 타이밍 배열도 유지했습니다.
+- 영상용 공통 글자 크기·색·모션·승인 로고 적용 지침은 각 Flow 프롬프트 접이식 영역에 추가했습니다. 실제 동영상 생성은 아직 하지 않았습니다.
+- 로고는 현재 텍스트형 임시 표시입니다. 실제 공개 전에 단지에 승인된 힐스테이트 및 힐스 에비뉴 원본과 BI 적용 버전을 확인해야 합니다. 외부 사이트의 코드·사진·장식 글꼴을 복제하지 않았습니다.
+
+### 조사 출처
+
+1. 공식 브랜드 아이덴티티: https://hillstate.co.kr/brand/identify
+2. 공식 분양단지 목록: https://hillstate.co.kr/sale/complex/index
+3. 송파더그리드: https://xn--2i0bq5hw7a1xj6plnpbowq8puw3cbyaf77a.com/ (Noto Sans KR 본문, Pretendard 주요 CTA)
+4. 고덕엘리스트: https://hillstate.co.kr/SALE/1052/main/index (Pretendard, 공식 분양 템플릿)
+5. 양산더스카이: https://hillstate.co.kr/SALE/1048/main/index (Pretendard, 공식 분양 템플릿)
+6. 공식 사이트 글꼴·색상 CSS: https://hillstate.co.kr/common/css/common.css?v=20260609
+7. Pretendard 공식 배포: https://github.com/orioncactus/pretendard
+8. 동봉 웹폰트 v1.3.9 원본: https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/variable/woff2/PretendardVariable.woff2
 
 발표 권장 환경: 데스크톱 브라우저, 1440×900 이상, 확대 100%. 모바일은 반응형이며 영상 컷은 가로로 넘겨볼 수 있습니다.
 
